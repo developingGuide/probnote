@@ -92,6 +92,28 @@ section {
   font-weight: 600;
 }
 
+@media screen and (max-width: 1023px ) {
+  #hero-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #hero-container .hero-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 0 0 0; /* optional spacing above */
+  }
+
+  #hero-container .hero-video video {
+    margin-left: 0;       /* reset the desktop margin */
+    max-width: 100%;      /* scale nicely on small screens */
+    height: auto;
+  }
+}
+
+
+
 /* Steps */
 .steps {
   display: flex;
